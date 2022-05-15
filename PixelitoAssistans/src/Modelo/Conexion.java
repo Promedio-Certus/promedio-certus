@@ -16,11 +16,11 @@ import java.util.logging.Logger;
  */
 public class Conexion {
 
-    //SERVIDOR DE BASE DE DATOS MYSQL
-    private final String baseBd = "pixelito";
-    private final String usuarioBd = "mosqueteros";
+    //SERVIDOR DE BASE DE DATOS MYSQL 3306
+    private final String baseBd = "ykypmkom_pixelito";
+    private final String usuarioBd = "ykypmkom_brish";
     private final String passwordBd = "CERTUS2022BDLJJ";
-    private final String urlBd = "jdbc:mysql://db4free.net:3306/" + baseBd;
+    private final String urlBd = "jdbc:mysql://agenciabrishmancl.com:3306/" + baseBd;
     private final String driver = "com.mysql.cj.jdbc.Driver";
     private Connection con = null;
 
