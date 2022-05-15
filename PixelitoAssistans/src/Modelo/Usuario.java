@@ -1,14 +1,14 @@
 package Modelo;
 
 public class Usuario {
-    String nombre;
-    String apellidoPaterno;
-    int dni;
-    String correo;
-    String contraseña;
-    int idPeriodo;
-    int idCurso;
-    int idCarrera;
+    private String nombre;
+    private String apellidoPaterno;
+    private int dni;
+    private String correo;
+    private String contraseña;
+    private int idPeriodo;
+    private int idCurso;
+    private int idCarrera;
 
     public Usuario() {
     }
