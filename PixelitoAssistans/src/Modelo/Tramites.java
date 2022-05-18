@@ -13,5 +13,38 @@ public class Tramites {
     private String descripcion;
     private String docAdjunto;
 
+    public Tramites() {
+    }
+
+    public Tramites(String idTramite, String descripcion, String docAdjunto) {
+        this.idTramite = idTramite;
+        this.descripcion = descripcion;
+        this.docAdjunto = docAdjunto;
+    }
+
+    public String getIdTramite() {
+        return idTramite;
+    }
+
+    public void setIdTramite(String idTramite) {
+        this.idTramite = idTramite;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getDocAdjunto() {
+        return docAdjunto;
+    }
+
+    public void setDocAdjunto(String docAdjunto) {
+        this.docAdjunto = docAdjunto;
+    }
+
    
 }
