@@ -9,7 +9,7 @@ package Modelo;
  * @author joaor
  */
 public class Tramites {
-     private String idTramite;
+    private String idTramite;
     private String descripcion;
     private String docAdjunto;
 

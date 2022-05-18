@@ -1,6 +1,9 @@
+
 package Modelo;
 
-public class Usuario {
+import java.awt.List;
+
+public class Usuario{
     private String nombre;
     private String apellidoPaterno;
     private int dni;
@@ -87,6 +90,17 @@ public class Usuario {
     public void setIdCarrera(int idCarrera) {
         this.idCarrera = idCarrera;
     }
+    
+   
+    public double MediaAritmentica(List notas){
+        double promedio;
+        for(int i = 0; i<=(notas.length - 1); i++){
+            promedio += notas[i];
+        }
+        for  (int x=0; x<miArray.length; x++)
+        System.out.println(miArray[x]);
+    }
+    
     
     
 }
