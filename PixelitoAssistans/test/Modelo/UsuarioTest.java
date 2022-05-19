@@ -4,7 +4,9 @@
  */
 package Modelo;
 
-import java.awt.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -254,20 +256,46 @@ public class UsuarioTest {
     }
 
     /**
+     * Test of listarNotas method, of class Usuario.
+     */
+    @Test
+    public void testListarNotas() {
+        System.out.println("listarNotas");
+        double[] notas = null;
+        Usuario instance = new Usuario();
+        instance.listarNotas(notas);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
      * Test of MediaAritmentica method, of class Usuario.
      */
     @Test
     public void testMediaAritmentica() {
         System.out.println("MediaAritmentica");
-        List nota = null;
+   
+        double[] notas;
+        notas = new double[13];
         Usuario instance = new Usuario();
+        instance.listarNotas(notas);
         double expResult = 0.0;
-        double result = instance.MediaAritmentica(nota);
+        double result = instance.MediaAritmentica();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        
+        //fail("The test case is a prototype.");
     }
-    
-    
+
+    /**
+     * Test of validarRendimiento method, of class Usuario.
+     */
+    @Test
+    public void testValidarRendimiento() {
+        System.out.println("validarRendimiento");
+        Usuario instance = new Usuario();
+        instance.validarRendimiento();
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
     
 }

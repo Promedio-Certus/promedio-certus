@@ -1,9 +1,9 @@
-
 package Modelo;
 
 import java.awt.List;
 
-public class Usuario{
+public class Usuario {
+
     private String nombre;
     private String apellidoPaterno;
     private int dni;
@@ -12,6 +12,10 @@ public class Usuario{
     private int idPeriodo;
     private int idCurso;
     private int idCarrera;
+
+    private double[] listaNotas;
+    private double promedio;
+    private String rendimiento;
 
     public Usuario() {
     }
@@ -90,17 +94,29 @@ public class Usuario{
     public void setIdCarrera(int idCarrera) {
         this.idCarrera = idCarrera;
     }
-    
-   
-    public double MediaAritmentica(List notas){
-        double promedio;
-        for(int i = 0; i<=(notas.length - 1); i++){
-            promedio += notas[i];
-        }
-        for  (int x=0; x<miArray.length; x++)
-        System.out.println(miArray[x]);
+
+    public void listarNotas(double[] notas) {
+        this.listaNotas = notas;
     }
-    
-    
-    
+
+    public double MediaAritmentica() {
+        if (this.listaNotas.length != 0) {
+            for (int i = 0; i <= (listaNotas.length - 1); i++) {
+                this.promedio += listaNotas[i];
+            }
+        }
+        return this.promedio;
+    }
+
+    public void validarRendimiento() {
+        if (this.promedio <= 20 || this.promedio >= 18) {
+            this.rendimiento = "Logro destacado";
+        } else if (this.promedio <= 17 || this.promedio >= 15) {
+            this.rendimiento = "Logro esperado";
+        } else if (this.promedio <= 14 || this.promedio >= 11) {
+            this.rendimiento = "Logro en proceso";
+        } else if (this.promedio <= 13) {
+            this.rendimiento = "Logro en inicio";
+        }
+    }
 }
