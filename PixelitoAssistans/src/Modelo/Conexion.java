@@ -24,7 +24,7 @@ public class Conexion {
     private final String driver = "com.mysql.cj.jdbc.Driver";
     private Connection con = null;
 
-    public Conexion() {
+    public Connection getConexion() {
         try {
             Class.forName(driver);
             con = (Connection) DriverManager.getConnection(this.urlBd, this.usuarioBd, this.passwordBd);
@@ -35,16 +35,18 @@ public class Conexion {
             System.out.println("Conexion fallida");
             System.err.println(e);
         }
-    }
-
-    public Connection getConnection() {
         return con;
     }
-
-    public void desconectar() {
-        con = null;
-        if (con == null) {
-            System.out.println("Conexion terminada");
-        }
-    }
+    
+    
+//    public Connection getConnection() {
+//        return con;
+//    }
+//
+//    public void desconectar() {
+//        con = null;
+//        if (con == null) {
+//            System.out.println("getConexion terminada");
+//        }
+//    }
 }

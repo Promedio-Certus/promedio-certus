@@ -5,7 +5,6 @@
 package Modelo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -19,283 +18,128 @@ import static org.junit.Assert.*;
  * @author canow
  */
 public class UsuarioTest {
-    
+
     public UsuarioTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
-    /**
-     * Test of getNombre method, of class Usuario.
-     */
     @Test
-    public void testGetNombre() {
-        System.out.println("getNombre");
-        Usuario instance = new Usuario();
-        String expResult = "";
-        String result = instance.getNombre();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNombre method, of class Usuario.
-     */
-    @Test
-    public void testSetNombre() {
-        System.out.println("setNombre");
-        String nombre = "";
-        Usuario instance = new Usuario();
-        instance.setNombre(nombre);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getApellidoPaterno method, of class Usuario.
-     */
-    @Test
-    public void testGetApellidoPaterno() {
-        System.out.println("getApellidoPaterno");
-        Usuario instance = new Usuario();
-        String expResult = "";
-        String result = instance.getApellidoPaterno();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setApellidoPaterno method, of class Usuario.
-     */
-    @Test
-    public void testSetApellidoPaterno() {
-        System.out.println("setApellidoPaterno");
-        String apellidoPaterno = "";
-        Usuario instance = new Usuario();
-        instance.setApellidoPaterno(apellidoPaterno);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDni method, of class Usuario.
-     */
-    @Test
-    public void testGetDni() {
-        System.out.println("getDni");
-        Usuario instance = new Usuario();
-        int expResult = 0;
-        int result = instance.getDni();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setDni method, of class Usuario.
-     */
-    @Test
-    public void testSetDni() {
-        System.out.println("setDni");
-        int dni = 0;
-        Usuario instance = new Usuario();
-        instance.setDni(dni);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCorreo method, of class Usuario.
-     */
-    @Test
-    public void testGetCorreo() {
-        System.out.println("getCorreo");
-        Usuario instance = new Usuario();
-        String expResult = "";
-        String result = instance.getCorreo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setCorreo method, of class Usuario.
-     */
-    @Test
-    public void testSetCorreo() {
-        System.out.println("setCorreo");
-        String correo = "";
-        Usuario instance = new Usuario();
-        instance.setCorreo(correo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getContraseña method, of class Usuario.
-     */
-    @Test
-    public void testGetContraseña() {
-        System.out.println("getContrase\u00f1a");
-        Usuario instance = new Usuario();
-        String expResult = "";
-        String result = instance.getContraseña();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setContraseña method, of class Usuario.
-     */
-    @Test
-    public void testSetContraseña() {
-        System.out.println("setContrase\u00f1a");
-        String contraseña = "";
-        Usuario instance = new Usuario();
-        instance.setContraseña(contraseña);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getIdPeriodo method, of class Usuario.
-     */
-    @Test
-    public void testGetIdPeriodo() {
-        System.out.println("getIdPeriodo");
-        Usuario instance = new Usuario();
-        int expResult = 0;
-        int result = instance.getIdPeriodo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setIdPeriodo method, of class Usuario.
-     */
-    @Test
-    public void testSetIdPeriodo() {
-        System.out.println("setIdPeriodo");
-        int idPeriodo = 0;
-        Usuario instance = new Usuario();
-        instance.setIdPeriodo(idPeriodo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getIdCurso method, of class Usuario.
-     */
-    @Test
-    public void testGetIdCurso() {
-        System.out.println("getIdCurso");
-        Usuario instance = new Usuario();
-        int expResult = 0;
-        int result = instance.getIdCurso();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setIdCurso method, of class Usuario.
-     */
-    @Test
-    public void testSetIdCurso() {
-        System.out.println("setIdCurso");
-        int idCurso = 0;
-        Usuario instance = new Usuario();
-        instance.setIdCurso(idCurso);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getIdCarrera method, of class Usuario.
-     */
-    @Test
-    public void testGetIdCarrera() {
-        System.out.println("getIdCarrera");
-        Usuario instance = new Usuario();
-        int expResult = 0;
-        int result = instance.getIdCarrera();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setIdCarrera method, of class Usuario.
-     */
-    @Test
-    public void testSetIdCarrera() {
-        System.out.println("setIdCarrera");
-        int idCarrera = 0;
-        Usuario instance = new Usuario();
-        instance.setIdCarrera(idCarrera);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of listarNotas method, of class Usuario.
-     */
-    @Test
-    public void testListarNotas() {
-        System.out.println("listarNotas");
-        double[] notas = null;
-        Usuario instance = new Usuario();
-        instance.listarNotas(notas);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of MediaAritmentica method, of class Usuario.
-     */
-    @Test
-    public void testMediaAritmentica() {
+    public void testMediaAritmentica_001() {
         System.out.println("MediaAritmentica");
-   
-        double[] notas;
-        notas = new double[13];
         Usuario instance = new Usuario();
-        instance.listarNotas(notas);
-        double expResult = 0.0;
-        double result = instance.MediaAritmentica();
-        assertEquals(expResult, result, 0.0);
+
+        instance.listarNotas("15");
+        instance.listarNotas("13");
+        instance.listarNotas("14");
+        instance.listarNotas("18");
+        instance.listarNotas("20");
+        instance.MediaAritmentica();
+
+        double ResultadoEsperado = 16.0;
+        double result = instance.getPromedio();
+
+        if (instance.getError().length() < 0) {
+            System.out.println("Detalle de error: " + instance.getError());
+        }
+
+        assertEquals(ResultadoEsperado, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of validarRendimiento method, of class Usuario.
-     */
     @Test
-    public void testValidarRendimiento() {
-        System.out.println("validarRendimiento");
+    public void testMediaAritmentica_002() {
+        System.out.println("MediaAritmentica");
         Usuario instance = new Usuario();
-        instance.validarRendimiento();
+
+        instance.listarNotas("tres");
+        instance.listarNotas("dos");
+        instance.listarNotas("dos");
+        instance.listarNotas("cero");
+        instance.listarNotas("once");
+        instance.MediaAritmentica();
+        
+        boolean errorResultado = false;
+        if(instance.getError().length()>0){
+            errorResultado = true;
+        }
+        
+        boolean errorEsperado = true ;
+        
+        if (instance.getError().length() < 0) {
+            System.out.println("Detalle de error: " + instance.getError());
+        }
+        
+        assertEquals(errorEsperado, errorResultado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
-    
+
+    @Test
+    public void testMediaAritmentica_003() {
+        System.out.println("MediaAritmentica");
+        Usuario instance = new Usuario();
+
+        instance.listarNotas("");
+        instance.listarNotas("null");
+        instance.listarNotas("undefined");
+        
+        boolean errorResultado = false;
+        if(instance.getError().length()>0){
+            errorResultado = true;
+        }
+        
+        boolean errorEsperado = true ;
+        
+        if (instance.getError().length() < 0) {
+            System.out.println("Detalle de error: " + instance.getError());
+        }
+        
+        assertEquals(errorEsperado, errorResultado);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testMediaAritmentica_004() {
+        System.out.println("MediaAritmentica");
+        Usuario instance = new Usuario();
+
+        instance.listarNotas("-20.1");
+        instance.listarNotas("1");
+        instance.listarNotas("-1");
+        instance.listarNotas("20.1");
+        instance.MediaAritmentica();
+
+         boolean errorResultado = false;
+        if(instance.getError().length()>0){
+            errorResultado = true;
+        }
+        
+        boolean errorEsperado = true ;
+        
+        if (instance.getError().length() < 0) {
+            System.out.println("Detalle de error: " + instance.getError());
+        }
+        
+        assertEquals(errorEsperado, errorResultado);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
 }
