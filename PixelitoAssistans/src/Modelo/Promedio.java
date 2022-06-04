@@ -9,7 +9,18 @@ package Modelo;
  * @author canow
  */
 public class Promedio {
+    String nombre;
+    Double nota ;
+
+    public Double getNota() {
+        return nota;
+    }
+
+    public Promedio(String nombre, Double nota) {
+        this.nombre = nombre;
+        this.nota = nota;
+    }
     
-    
+       
     
 }
